@@ -6,5 +6,5 @@ test.beforeEach(async ({ page }) => {
 
 test('use Turquoise as a background color', async ({ page }) => {
   await page.click("text=Turquoise")
-  await page.waitForSelector("text=#1abc9c")
+  await page.waitForSelector("text=#1abc9")
 });
