@@ -16,7 +16,7 @@
     "vite-plugin-istanbul": "^5.0.0"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build && tsc",
     "preview": "vite preview",
     "test": "playwright test"

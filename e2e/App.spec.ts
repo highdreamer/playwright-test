@@ -1,4 +1,4 @@
-import { test } from './baseFixtures';
+import { test } from "@playwright/test"
 
 test.beforeEach(async ({ page }) => {
   await page.goto("/")
@@ -6,6 +6,7 @@ test.beforeEach(async ({ page }) => {
 
 test('use Turquoise as a default background color', async ({ page }) => {
   await page.waitForSelector("text=#1abc9c")
+  console.log("-----------here--------------")
 });
 
 test('use Red as a background color', async ({ page }) => {
