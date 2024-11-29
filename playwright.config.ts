@@ -8,6 +8,13 @@ export default defineConfig({
       USE_BABEL_PLUGIN_ISTANBUL: '1',
     },
   },
+  reporter: [['html',
+    {
+      outputFolder: 'my-report',
+      host: "localhost",
+      port: 9323
+    }
+  ]],
   projects: [
     {
       name: 'Chrome',
